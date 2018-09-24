@@ -10,7 +10,7 @@
  * Determination of arrival time of a student
  */
 
-package khaustau.homework1;
+package khaustau.homeworkOne;
 
 public class TaskFirstV2 {
 
