@@ -14,12 +14,10 @@ public class TaskSecond {
 
     public static void main(String[] args) {
         double number = 1249.1547;           // number type double
-        int intNumber = 568;                 // number type int
+        int intNumber = 5675;                 // number type int
         int lastNum = 7;                     // numeral to compare
         char charNum = Character.forDigit(lastNum, 10);
         String stringNum = Double.toString(number);
-
-        stringNum = stringNum.replace(".","");
 
         /*  finding last numeral in the number type int */
         if ((Math.abs(intNumber) % 10) == lastNum) {
