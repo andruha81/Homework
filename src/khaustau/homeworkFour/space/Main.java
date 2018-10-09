@@ -1,8 +1,8 @@
 package khaustau.homeworkFour.space;
 
-import khaustau.homeworkFour.space.entity.MeteoSat;
-import khaustau.homeworkFour.space.entity.NavSat;
-import khaustau.homeworkFour.space.entity.Satallite;
+import khaustau.homeworkFour.entity.MeteoSat;
+import khaustau.homeworkFour.entity.NavSat;
+import khaustau.homeworkFour.entity.Satallite;
 
 import java.util.ArrayList;
 import java.util.List;
