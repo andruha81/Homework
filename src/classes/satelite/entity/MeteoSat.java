@@ -1,4 +1,4 @@
-package khaustau.homeworkFour.entity;
+package classes.satelite.entity;
 
 import java.util.ArrayList;
 import java.util.List;

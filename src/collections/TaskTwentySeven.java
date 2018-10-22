@@ -1,8 +1,15 @@
-package khaustau.homeworkFive;
+/*
+ * Задача по теме 5 - коллекции
+ */
+package collections;
 
 import java.util.*;
 
-public class ListWithoutRepeat {
+/*
+ * Задача 27
+ *  удаление повторяющихся чисел списка
+ */
+public class TaskTwentySeven {
 
     public static void main(String[] args) {
         List<Integer> nums = new ArrayList<>();

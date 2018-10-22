@@ -1,9 +1,16 @@
-package khaustau.homeworkFive;
+/*
+ * Задача по теме 5 - коллекции
+ */
+package collections;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Dictionary {
+/*
+ * Задача 29
+ *  составление частотного словаря текста
+ */
+public class TaskTwentyNine {
 
     public static void main(String[] args) {
         Map<String, Integer> dict = new HashMap<>();

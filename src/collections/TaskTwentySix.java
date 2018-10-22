@@ -1,11 +1,18 @@
-package khaustau.homeworkFive;
+/*
+* Задача по теме 5 - коллекции
+ */
+package collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class DelMarks {
+/*
+* Задача 26
+*  удаление неудовлетворительных оценок из списка
+ */
+public class TaskTwentySix {
 
     public static void main(String[] args) {
         List<Integer> marks = new ArrayList<>();

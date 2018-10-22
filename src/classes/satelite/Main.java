@@ -1,8 +1,13 @@
-package khaustau.homeworkFour;
+/*
+ * Тема 4 - классы и объекты
+ * Задача 25
+ * Спутники (вместо банковских карточек)
+ */
+package classes.satelite;
 
-import khaustau.homeworkFour.entity.MeteoSat;
-import khaustau.homeworkFour.entity.NavSat;
-import khaustau.homeworkFour.entity.Satallite;
+import classes.satelite.entity.MeteoSat;
+import classes.satelite.entity.NavSat;
+import classes.satelite.entity.Satallite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,11 +16,15 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
+        int launchNumber = 10;
         List<Satallite> succes = new ArrayList();
         List<Satallite> fault = new ArrayList();
         Random rand = new Random();
 
-        LOOP : for (int i = 1; i <= 10; i++) {
+        /*
+        * запуск launchNumber различных спутников
+        */
+        LOOP : for (int i = 1; i <= launchNumber; i++) {
             switch (rand.nextInt(2) + 1) {
                 case 1 :
                 {
@@ -64,6 +73,7 @@ public class Main {
             }
         }
 
+        /* вывод списка неудачных пусков */
         if (fault.isEmpty() == false) {
             System.out.println("Unsuccessful satellites : ");
             for (Satallite sat : fault) {
@@ -73,6 +83,7 @@ public class Main {
             System.out.println();
         }
 
+        /* вывод списка удачных пусков */
         if (succes.isEmpty() == false) {
             System.out.println("Successful satellites : ");
             for (Satallite sat : succes) {

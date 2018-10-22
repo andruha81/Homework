@@ -1,11 +1,18 @@
-package khaustau.homeworkFive;
+/*
+ * Задача по теме 5 - коллекции
+ */
+package collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class HighestMark {
+/*
+ * Задача 28
+ *  поиск наивысшей оценки
+ */
+public class TaskTwentyEight {
 
     public static void main(String[] args) {
         List<Integer> nums = new ArrayList<>();

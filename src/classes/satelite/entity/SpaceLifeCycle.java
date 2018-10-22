@@ -1,4 +1,4 @@
-package khaustau.homeworkFour.entity;
+package classes.satelite.entity;
 
 public interface SpaceLifeCycle {
     boolean launch(String launchVechicle);

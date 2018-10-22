@@ -1,4 +1,4 @@
-package khaustau.homeworkFour.entity;
+package classes.satelite.entity;
 
 import java.util.Arrays;
 import java.util.Random;

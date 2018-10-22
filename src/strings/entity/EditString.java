@@ -1,4 +1,4 @@
-package khaustau.HomeworkThree;
+package strings.entity;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ public class EditString {
      * знак + означает один и более символов
      * таким образом выделяются слова вокруг небуквенных симловлов, даже если их несколько
      */
-    void lastLetters(String s) {
+    public void lastLetters(String s) {
         String[] newStr = s.split("\\W+");
 
         for (String letterStr : newStr) {
@@ -18,7 +18,10 @@ public class EditString {
         }
     }
 
-    void countSymbols(String s, String checkStr, String printStr) {
+    /*
+    * Подсчет различных знаков препинания
+     */
+    public void countSymbols(String s, String checkStr, String printStr) {
         int count = 0;
 
         for (int i = 0; i < s.length(); i++) {
@@ -33,7 +36,7 @@ public class EditString {
      * символ . в регулярных выражениях означае люьой символ
      * поэтому для нахождения точек используем \.
       */
-    void textBetween(String s) {
+    public void textBetween(String s) {
         String[] newStr = s.split("\\.",3);
 
         if (newStr.length < 3) {
@@ -43,9 +46,9 @@ public class EditString {
         }
     }
     /*
-    * пример похожий на задание 1
+    * подсчет количества слов в тексте
      */
-    void countWords(String s){
+    public void countWords(String s){
         String[] newStr = s.split("\\W+");
 
         System.out.println("Number of words in the text is "+newStr.length);
