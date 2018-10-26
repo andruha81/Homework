@@ -63,5 +63,46 @@ public class TasksExtra {
 
         System.out.println("Summary of numbers from 0 to " + numberFour + " is : " + sumFour);
         System.out.println("Factorial of number " + numberFour + " is : " + factorial);
+        
+        /*
+        * Задача 4.4 и 4.5
+        * Решение через рекурсию
+         */
+        BigInteger factorialFive = BigInteger.ONE;
+        int summaryFive;
+        int numberFive = 15;
+        
+        System.out.println("======== Задачи 4.4 и 4.5 ========");
+
+        factorialFive = fact(numberFive);
+        summaryFive = sumNums(numberFive);
+
+        System.out.println("Factorial of number " + numberFive + " is : " + factorialFive);
+        System.out.println("Summary of numbers before " + numberFive + " is : " + summaryFive);
+        
+    }
+    
+    static BigInteger fact(int number) {
+        BigInteger result = BigInteger.valueOf(number);
+
+        if (number == 1) {
+            return BigInteger.valueOf(number);
+        }
+
+        result = result.multiply(fact(number - 1));
+
+        return result;
+    }
+
+    static int sumNums(int number) {
+        int result = number;
+
+        if (number == 1) {
+            return number;
+        }
+
+        result += sumNums(number - 1);
+
+        return result;
     }
 }
