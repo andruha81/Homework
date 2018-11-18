@@ -45,6 +45,7 @@ public class Main {
         for (int i = 0; i < customersCount; i++) {
             customers.execute(new Customer(names[random.nextInt(names.length)], food, cashboxes));
         }
+        customers.shutdown();
 
     }
 }
