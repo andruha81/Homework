@@ -20,7 +20,6 @@ public class Main {
         List<Food> food = new ArrayList<>();                 // коллекция продуктов доступных к покупке
         String[] names = {"Donald Trump", "Angela Merkel", "Teresa May",
                 "Emanuel Makron", "Vladimir Putin", "Xi Jinping", "Alex Lukashenko"}; // имена для посетителей
-        //Customer[] customers = new Customer[10];
         int customersCount = 10;      // Кол-во покупателей
         ExecutorService customers = Executors.newFixedThreadPool(customersCount);
         int cashboxCount = 3;   // кол-во касс
