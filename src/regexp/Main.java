@@ -21,27 +21,34 @@ public class Main {
         Pattern patternTaskTwo = Pattern.compile("0[xX]([1-9a-fA-F]|0(?![xX]))+");
         Matcher matcherTaskTwo = patternTaskTwo.matcher(stringWithHexadecimalNumbers);
 
-        System.out.print("Hexadecimal numbers: ");
+        System.out.println("Original string: " + stringWithHexadecimalNumbers);
+        System.out.print("Hexadecimal numbers in string: ");
         while (matcherTaskTwo.find()) {
             System.out.print(matcherTaskTwo.group() + ", ");
         }
 
         /*
-         * Задача 2
+         * Задача 3
          * поиск в строке тегов абзацев
-         * если тег с параметрами, заменить его на пустой
+         * в том числе тегов с параметрами
+         * Заменить теги с параметрами на пустые
          */
         System.out.println("\n========== Задача 3 =============");
 
-        String stringWithTags = "<p dfdf> <p>";
-        Pattern patternTaskThree = Pattern.compile("<p(.*?)>");
+        String stringWithTags = "<p> text </p> with <p align=\"justify\"> paragraph tags </p>";  // строка с тегами параграфов
+        System.out.println("Original string: " + stringWithTags);
+
+        /* В начале находим все теги абзацев и выводим их */
+        Pattern patternTaskThree = Pattern.compile("</?p(.*?)>");
         Matcher matcherTaskThree = patternTaskThree.matcher(stringWithTags);
 
+        System.out.print("Paragraph tags in string: ");
         while (matcherTaskThree.find()) {
-            System.out.println(matcherTaskThree.group());
-            if (!matcherTaskThree.group(1).isEmpty()) {
-
-            }
+            System.out.print(matcherTaskThree.group() + " ");
         }
+
+        /*  Заменяем в строке теги с параметрами на пустые и выводим ее */
+        stringWithTags = stringWithTags.replaceAll("<p(.*?)>", "<p>");
+        System.out.println("\nModified string: " + stringWithTags);
     }
 }
