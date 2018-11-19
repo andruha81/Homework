@@ -72,7 +72,7 @@ public class Customer implements Runnable {
         System.out.println(customerCheck);
         System.out.println("&&&&&&&&&&&&&&&\n");
 
-        /* После оплаты покупатель покидает очередьб очередб уменьш. на 1 */
+        /* После оплаты покупатель покидает очередь, очередь уменьш. на 1 */
         delCustomerQueue();
 
         /* Освобождение кассы для след. покупателя */

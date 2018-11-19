@@ -5,6 +5,9 @@ public class Cashbox {
     private boolean busy = false;   // занятость кассы для расчета с покупателем
 
     public Cashbox(int cashboxNumber) {
+        if (cashboxNumber <=0) {
+            throw new IllegalArgumentException("cashbox number must start from 1");
+        }
         this.cashboxNumber = cashboxNumber;
     }
 
