@@ -47,7 +47,7 @@ public class Main {
             System.out.print(matcherTaskThree.group() + " ");
         }
 
-        /*  Заменяем в строке теги с параметрами на пустые и выводим ее */
+        /*  Заменяем в строке теги абзацев с параметрами на пустые и выводим ее */
         stringWithTags = stringWithTags.replaceAll("<p(.*?)>", "<p>");
         System.out.println("\nModified string: " + stringWithTags);
     }
