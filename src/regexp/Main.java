@@ -18,7 +18,7 @@ public class Main {
 
         /* В шаблон поиска добавлена проверка если 16-ричные числа идут подряд */
         String stringWithHexadecimalNumbers = "0x4548ad 0xdf54g 0Xr4887 0x4A5F00x56D";
-        Pattern patternTaskTwo = Pattern.compile("0[xX]([1-9a-fA-F]|0(?![xX]))+");
+        Pattern patternTaskTwo = Pattern.compile("0[xX]([1-9a-fA-F]|0(?![xX]\\p{XDigit}))+");
         Matcher matcherTaskTwo = patternTaskTwo.matcher(stringWithHexadecimalNumbers);
 
         System.out.println("Original string: " + stringWithHexadecimalNumbers);
